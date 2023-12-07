@@ -1,0 +1,159 @@
+/* Reset des styles pour uniformiser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Styles pour l'en-tête */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Styles pour les sections */
+  .section {
+    padding: 50px 0;
+  }
+  
+  /* Styles pour le pied de page */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .profile-pic {
+    width: calc(100% / 5); /* Réduit la largeur à un tiers de sa taille originale */
+    height: auto; /* Garde les proportions de l'image */
+    /* Autres styles si besoin */
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Pour arrondir l'image (si nécessaire) */
+  }
+  
+  /* Media queries pour les appareils mobiles */
+  @media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-text,
+    .about-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .about-image img {
+      max-width: 50%; /* Adapter la largeur de l'image selon tes préférences */
+    }
+  }
+
+  #cv {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .cv-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cv-link:hover {
+    background-color: #555;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-list a {
+    text-decoration: none;
+    color: #0077cc; /* Couleur de lien généralement utilisée pour les sites web */
+  }
+  .github-repos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .repo {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .repo h3 {
+    margin-top: 0;
+  }
+  
+  .repo a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0077cc; /* Couleur de lien généralement utilisée pour les sites web */
+  }
+  
